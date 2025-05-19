@@ -4,19 +4,19 @@
     <div id="dashboard">
       <div class="row">
         <div class="col-md-4">
-          <div class="dashboard-item card">
+            <app-dashboard-item [image]="{ src: 'server.png', alt: 'A signal symbol'}" [title]="'A signal symbol'">
             <app-server-status />
-          </div>
+            </app-dashboard-item>
         </div>
         <div class="col-md-4">
-          <div class="dashboard-item card">
+            <app-dashboard-item [image]="{ src: 'traffic.png', alt: 'A Traffic symbol'}" [title]="'A Traffic symbol'">
             <app-traffics />
-          </div>
+            </app-dashboard-item>
         </div>
         <div class="col-md-4">
-          <div class="dashboard-item card">
+            <app-dashboard-item [image]="{ src: 'traffic.png', alt: 'A Tickets symbol'}" [title]="'A Tickets symbol'">
             <app-tickets />
-          </div>
+        </app-dashboard-item>
         </div>
       </div>
     </div>
