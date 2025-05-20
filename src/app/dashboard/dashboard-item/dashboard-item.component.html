@@ -1,8 +1,9 @@
 <article>
-    <header>
-        <a class="navbar-brand" href="#">
-            <img [src]="image().src" [alt]="image().alt" width="30" height="30" />
-          </a>
-        <h2>{{ title() }}</h2>
-    </header>
+  <header>
+    <a class="navbar-brand" href="#">
+      <img [src]="image().src" [alt]="image().alt" width="30" height="30" />
+    </a>
+    <h3>{{ title() }}</h3>
+  </header>
+  <ng-content />
 </article>

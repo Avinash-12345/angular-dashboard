@@ -1,22 +1,37 @@
 <app-header />
-<div class="container mt-5">
+<div class="container mt-5 bg-none">
   <main>
     <div id="dashboard">
       <div class="row">
         <div class="col-md-4">
-            <app-dashboard-item [image]="{ src: 'server.png', alt: 'A signal symbol'}" [title]="'A signal symbol'">
-            <app-server-status />
+          <div class="card p-3">
+            <app-dashboard-item
+              [image]="{ src: 'server.png', alt: 'A signal symbol' }"
+              [title]="'SERVER STATUS'"
+            >
+              <app-server-status />
             </app-dashboard-item>
+          </div>
         </div>
         <div class="col-md-4">
-            <app-dashboard-item [image]="{ src: 'traffic.png', alt: 'A Traffic symbol'}" [title]="'A Traffic symbol'">
-            <app-traffics />
+          <div class="card p-3">
+            <app-dashboard-item
+              [image]="{ src: 'traffic.png', alt: 'A Traffic symbol' }"
+              [title]="'TRAFFIC'"
+            >
+              <app-traffics />
             </app-dashboard-item>
+          </div>
         </div>
         <div class="col-md-4">
-            <app-dashboard-item [image]="{ src: 'traffic.png', alt: 'A Tickets symbol'}" [title]="'A Tickets symbol'">
-            <app-tickets />
-        </app-dashboard-item>
+          <div class="card p-3">
+            <app-dashboard-item
+              [image]="{ src: 'traffic.png', alt: 'A Tickets symbol' }"
+              [title]="'SUPPORT TICKETS'"
+            >
+              <app-tickets />
+            </app-dashboard-item>
+          </div>
         </div>
       </div>
     </div>
